@@ -11,7 +11,7 @@ SUB_DIR := 	lib/libencrypt \
 		lib/libnwm-udt-client \
 		lib/libnwm-udt-server \
 #		server \
-#		client \
+#		client/netdisk \
 
 export
 
