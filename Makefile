@@ -7,17 +7,24 @@ LIBPATH := $(TOP_DIR)/lib/libencrypt/
 INCLUDE += -I $(TOP_DIR)/lib/libencrypt/
 LD_PATH := -L $(TOP_DIR)/lib/libencrypt/
 
-
-SUB_DIR := 	server
-#		client	\
-#		lib/libencrypt \
+SUB_DIR := 	lib/libencrypt \
+		lib/libnwm-udt-client \
+		lib/libnwm-udt-server \
+#		server \
+#		client \
 
 export
 
-$(SUB_DIR):ECHO
+.PHONY : all $(SUB_DIR)
+
+all : $(SUB_DIR)
+
+$(SUB_DIR):
 	make -C $@
-ECHO:
-	@echo $(SUB_DIR)
-	@echo begin compile
+
 clean:
-	make clean -C $(SUB_DIR)
+	for d in $(SUB_DIR); \
+	do \
+		make --directory=$$d clean; \
+	done 
+	

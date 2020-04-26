@@ -1,3 +1,4 @@
+# libencrypt.so
 CXXFLAGS += -lcrypto -lssl -fPIC
 TARGET = libencrypt.so
 
@@ -10,5 +11,5 @@ all:$(OBJS)
 $(OBJS):$(SRCS)
 	$(CC) $(CXXFLAGS) -c $^
 
-clean:
-	rm -rf $(OBJS) $(TARGET)
+.PHONY clean:
+	@rm -rf $(OBJS) $(TARGET)
