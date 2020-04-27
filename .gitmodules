@@ -1,0 +1,3 @@
+[submodule "udt"]
+	path = udt
+	url = git@github.com:GCS85/udt.git
