@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>images/setting.png</file>
+        <file alias="setting">images/settings.png</file>
+        <file alias="visible">images/visible.png</file>
+        <file alias="connect">images/connect.png</file>
+        <file alias="update">images/update.png</file>
+    </qresource>
+</RCC>

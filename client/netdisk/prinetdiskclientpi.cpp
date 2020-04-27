@@ -1,7 +1,7 @@
 #include "prinetdiskclientpi.h"
 
 
-//#include "prinetdisk.h"
+#include "prinetdisk.h"
 
 #include <iostream>
 #include <sstream>

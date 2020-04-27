@@ -1,5 +1,5 @@
 # private netdisk server
-CXXFLAGS += -ludt -lmysqlclient -lencrypt
+CXXFLAGS += -ludt -lmysqlclient -lencrypt -lnwm-udt-server
 CXXFLAGS += -Wl,-rpath,$(LIBPATH)
 LD_PATH += -L/usr/lib64/mysql/
 
